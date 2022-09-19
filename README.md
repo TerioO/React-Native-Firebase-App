@@ -6,6 +6,8 @@ The project is a React Native app containing 3 pages:
 - Register
 - Home 
 
+The pages are found in **./src/modules** 
+
 The app uses Firebase as a backend, providing functionality for authentication and React Navigation.
 
 The app also uses a Firestore database and functions (although an emulator is used to simulate their functionality)
