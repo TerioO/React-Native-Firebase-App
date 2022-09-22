@@ -1,29 +1,37 @@
 import React from 'react';
-import {StyleSheet, View, Text, Button} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  useWindowDimensions,
+} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import auth from '@react-native-firebase/auth';
 
-import {Register} from './src/modules/Register/Register_page';
-import {LogIn} from './src/modules/Log_in/Log_in_page';
-import Home from './src/modules/Home/Home';
-
+import HomeScreen from './src/screens/HomeScreen';
+import LogInScreen from './src/screens/LogInScreen'
 
 const Stack = createNativeStackNavigator();
 
-const App1 = () => {
+const App = () => {
 
-  return(
+  return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}>
-        <Stack.Screen name="LogIn" component={LogIn} />
-        <Stack.Screen name="Register" component={Register} />
-        <Stack.Screen name="HomeScreen" component={Home} />
+      <Stack.Navigator>  
+        <Stack.Screen name="Login" component={LogInScreen} options={{headerShown: false}}/> 
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-export default App1;
+export default App;
+
+/***************************************************************************************************************************************
+  <Stack.Navigator>: screenOptions={{ headerShown: false }}* --> remove header for WHOLE stack 
+  <Stack.Screen>:    options={{headerShown: false}* --> remove header for THIS page 
+
+  */
