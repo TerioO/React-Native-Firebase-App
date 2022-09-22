@@ -16,11 +16,11 @@ With this app a user can register an account with email and password and login t
 
 ## TypeScript version
 
-There is a version of this app written in TypeScript, go to the branch TypeScript-version to see the files there
+There is a version of this app written in TypeScript, go to the branch **TypeScript-version** to see the files there
 
 ## Authentication
 
-A mock app for testing React Native Firebase auth was made to prototype authentication.
+A mock app for testing React Native Firebase auth was made to prototype authentication, go to branch **Authentication** to see the files there.
 
 # Getting started:
 
