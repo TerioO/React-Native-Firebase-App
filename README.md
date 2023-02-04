@@ -1,4 +1,4 @@
-# React Native - Project 1
+# React Native Firebase App
 
 #### This is my first React Native project
 The project is a React Native app containing 3 pages:
